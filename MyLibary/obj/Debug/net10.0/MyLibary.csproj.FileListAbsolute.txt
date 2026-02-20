@@ -1,0 +1,14 @@
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.AssemblyInfoInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.AssemblyInfo.cs
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.csproj.CoreCompileInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\bin\Debug\net10.0\MyLibary.exe
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\bin\Debug\net10.0\MyLibary.deps.json
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\bin\Debug\net10.0\MyLibary.runtimeconfig.json
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\bin\Debug\net10.0\MyLibary.dll
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\bin\Debug\net10.0\MyLibary.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.dll
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\refint\MyLibary.dll
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\MyLibary.genruntimeconfig.cache
+C:\Users\Katri\RiderProjects\C_Sharp\MyLibary\obj\Debug\net10.0\ref\MyLibary.dll

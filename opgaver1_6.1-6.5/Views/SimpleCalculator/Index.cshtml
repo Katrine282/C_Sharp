@@ -1,0 +1,30 @@
+﻿@* @model dynamic *@
+@* *@
+@* @{ *@
+@*     Layout = null; *@
+@* } *@
+
+
+@using (Html.BeginForm()) {
+    <h2>Simple Calculator</h2>
+    <p>
+        @Html.TextBox("Number1")
+        <br/>
+        @Html.TextBox("Number2")
+    </p>
+    <p>
+        <input type="submit" value="+" name="operator">
+        <input type="submit" value="-" name="operator">
+        <input type="submit" value="*" name="operator">
+        <input type="submit" value="/" name="operator">
+    </p>
+    
+    @if (ViewBag.Result != null)
+    {
+        <p>Result: @ViewBag.Result</p>
+    }
+    else
+    {
+        <p>@ViewBag.Error</p>
+    }
+}

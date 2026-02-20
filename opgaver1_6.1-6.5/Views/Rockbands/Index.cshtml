@@ -1,0 +1,15 @@
+﻿@* @model dynamic *@
+@* *@
+@* @{ *@
+@*     Layout = "_Layout"; *@
+@* } *@
+
+<body>
+<h2>Great Rockbands</h2>
+<ol>
+    @foreach (string band in ViewBag.bands)
+    {
+        <li>@band</li>
+    }
+</ol>
+</body>

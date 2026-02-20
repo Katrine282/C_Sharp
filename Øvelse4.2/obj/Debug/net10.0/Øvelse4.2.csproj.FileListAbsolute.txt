@@ -1,0 +1,14 @@
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\bin\Debug\net10.0\Øvelse4.2.exe
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\bin\Debug\net10.0\Øvelse4.2.deps.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\bin\Debug\net10.0\Øvelse4.2.runtimeconfig.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\bin\Debug\net10.0\Øvelse4.2.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\bin\Debug\net10.0\Øvelse4.2.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.AssemblyInfoInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.AssemblyInfo.cs
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.csproj.CoreCompileInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\refint\Øvelse4.2.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\Øvelse4.2.genruntimeconfig.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse4.2\obj\Debug\net10.0\ref\Øvelse4.2.dll

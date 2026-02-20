@@ -1,0 +1,73 @@
+﻿@* @model dynamic *@
+@* *@
+@* @{ *@
+@*     ViewBag.Title = "title"; *@
+@*     Layout = "_Layout"; *@
+@* } *@
+
+<h2>Books & Albums</h2>
+@{ RenderBook(ViewBag.bog); }  
+@{ RenderCD(ViewBag.cd); }  
+
+@{
+    void RenderCD(MusicCD cd)
+    {
+        <div style="display:flex; gap:40px; margin-bottom:30px;">
+
+            
+            <div style="width:350px;">
+                <div><strong>Album:</strong> @cd.Title</div>
+                <div><strong>Artist:</strong> @cd.Artist</div>
+                <div><strong>Price:</strong> @cd.Price</div>
+                <div><strong>Publisher:</strong> @cd.Label</div>
+
+                <div style="margin-top:10px;">
+                    <img src="@cd.ImageUrl"
+                         alt="@cd.Title"
+                         style="width:300px; height:auto;" />
+                </div>
+            </div>
+
+            <!-- Tracks -->
+            <div>
+                <div><strong>Tracks:</strong></div>
+                <ol>
+                    @foreach (var track in cd.TrackList)
+                    {
+                        if (track.Composer != null)
+                        {
+                            <li>@track.Title (@track.Composer) @track.Length</li>
+                        }
+                        else
+                        {
+                            <li>@track.Title @track.Length</li>
+                        }
+                    }
+                </ol>
+                <div><strong>Total playing time:</strong> @cd.GetPlayingTime()</div>
+            </div>
+
+        </div>
+    }
+}
+
+@{
+    void RenderBook(Book book)
+    {
+        <div style="margin-bottom:30px;">
+
+            <div><strong>Title:</strong> @book.Title</div>
+            <div><strong>Author:</strong> @book.Author</div>
+            <div><strong>Price:</strong> @book.Price</div>
+            <div><strong>Publisher:</strong> @book.Publisher</div>
+            <div><strong>ISBN:</strong> @book.ISBN</div>
+
+            <div style="margin-top:10px;">
+                <img src="@book.ImageUrl"
+                     alt="@book.Title"
+                     style="width:200px; height:auto;" />
+            </div>
+
+        </div>
+    }
+}

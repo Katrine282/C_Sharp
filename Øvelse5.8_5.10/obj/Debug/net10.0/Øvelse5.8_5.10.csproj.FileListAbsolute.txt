@@ -1,0 +1,14 @@
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\bin\Debug\net10.0\Øvelse5.8_5.10.exe
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\bin\Debug\net10.0\Øvelse5.8_5.10.deps.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\bin\Debug\net10.0\Øvelse5.8_5.10.runtimeconfig.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\bin\Debug\net10.0\Øvelse5.8_5.10.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\bin\Debug\net10.0\Øvelse5.8_5.10.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.AssemblyInfoInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.AssemblyInfo.cs
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.csproj.CoreCompileInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\refint\Øvelse5.8_5.10.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\Øvelse5.8_5.10.genruntimeconfig.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse5.8_5.10\obj\Debug\net10.0\ref\Øvelse5.8_5.10.dll

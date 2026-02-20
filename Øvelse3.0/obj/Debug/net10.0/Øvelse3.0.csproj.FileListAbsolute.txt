@@ -1,0 +1,14 @@
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\bin\Debug\net10.0\Øvelse3.0.exe
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\bin\Debug\net10.0\Øvelse3.0.deps.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\bin\Debug\net10.0\Øvelse3.0.runtimeconfig.json
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\bin\Debug\net10.0\Øvelse3.0.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\bin\Debug\net10.0\Øvelse3.0.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.AssemblyInfoInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.AssemblyInfo.cs
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.csproj.CoreCompileInputs.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\refint\Øvelse3.0.dll
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.pdb
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\Øvelse3.0.genruntimeconfig.cache
+C:\Users\Katri\RiderProjects\C_Sharp\Øvelse3.0\obj\Debug\net10.0\ref\Øvelse3.0.dll
