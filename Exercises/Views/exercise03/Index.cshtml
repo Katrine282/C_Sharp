@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Breakfast order</title>
+</head>
+<body>
+@using (Html.BeginForm("Index", "exercise03", FormMethod.Post))
+{
+    <h1>Breakfast order</h1>
+    <form action="POST">
+        <p>
+            @Html.Label("FullName", "Your name:")
+            @Html.TextBox("FullName")
+        </p>
+        <p>
+            @Html.Label("RoomNumber", "Room number:")
+            @Html.TextBox("RoomNumber", null, new { type = "number" })
+        </p>
+        <p>What would you like to eat for breakfast?<br/><br/>
+            @foreach (SelectListItem item in ViewBag.BreakfastItems)
+            {
+                <input type="checkbox" name="menuitem" value="@item.Value"/>
+                @($"{item.Text} - {item.Value.Split('|')[1]} kr.")
+                <br/>
+            }
+        </p>
+        <p>
+            @Html.Label("Time", "When:")
+            @Html.TextBox("Time", null, new { type = "datetime-local" })
+        </p>
+        <p>
+            <input type="submit" value="Order"/>
+        </p>
+    </form>
+}
+</body>
+</html>
