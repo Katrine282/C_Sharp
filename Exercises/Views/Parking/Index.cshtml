@@ -1,0 +1,56 @@
+﻿@model Exercise1.Models.ParkingTicketMachine
+@{
+    ViewBag.Title = "Parking Ticket";
+    Layout = null;
+}
+<style>
+        .form-label {
+            display: inline-block;
+            width: 130px;
+        }
+</style>
+
+@using(Html.BeginForm("Index", "Parking", FormMethod.Post)) {
+    <h2>Parking Ticket Machine</h2>
+    <br/>
+    @* @Html.LabelFor(m => m.TimeNow, new { @class = "form-label" }) *@
+    @Html.Label("TimeNow", "Time now", new { @class = "form-label" })
+    @* @Html.DisplayFor(m => m.TimeNow) *@
+    @Model.TimeNow.ToString("HH:mm")
+    <br/>
+    @* @Html.LabelFor(m => m.PaidUntil, new { @class = "form-label" }) *@
+    @Html.Label("PaidUntil", "Paid until", new { @class = "form-label" })
+    @* @Html.DisplayFor(m => m.PaidUntil) *@
+    @Model.PaidUntil.ToString("HH:mm")
+    <br/>
+    @Html.Label("DisplayInfo", "Display Info",new { @class = "form-label" })
+    @* <input type="text" name="AmountInserted" value="@Model.AmountInserted kr inserted" readonly /> *@
+    @if (ViewBag.cancelTekst != null)
+    {
+        @ViewBag.cancelTekst;
+    }
+    else
+    {
+        @($"{Model.AmountInserted} kr inserted")
+        @Html.HiddenFor(m => m.AmountInserted)
+    }
+    <br/>
+    @* @Html.LabelFor(m => m.AmountInserted, new { @class = "form-label" }) *@
+    @* @Html.DisplayFor(m => m.AmountInserted) *@
+    @* @Html.HiddenFor(m => m.AmountInserted) *@
+    <h2>Coin Insert</h2>
+    @foreach (var coin in Model.CoinsToInsert)
+    {
+        <button type="submit"
+                name="insertedCoin"
+                value="@coin">
+            @coin kr
+        </button>
+    }
+    
+    <br/>
+    <br/>
+    
+    <button type="submit" name="confirm">Confirm</button> 
+    <button type="submit" name="cancel">Cancel</button> 
+}

@@ -1,0 +1,12 @@
+﻿@model Exercise1.Models.ParkingTicketMachine
+@{
+    ViewBag.Title = "Confirm";
+    Layout = null;
+}
+
+<h2>Parking Ticket</h2>
+@using (Html.BeginForm())
+{
+    <p>Time issued: @Model.TimeNow</p>
+    <p>Parking paid until: @Model.PaidUntil</p>
+}

@@ -1,0 +1,32 @@
+﻿<h2>Breakfast Order</h2>
+
+<p>Good morning @ViewBag.Name!</p>
+
+<p>you have ordered:</p>
+@{
+    var list = ViewBag.Items.ToString().Split(",");
+    decimal total = 0;
+}
+<ul>
+    @foreach (var item in list)
+    {
+        if (item != "false")
+        {
+            var parts = item.Split('|');
+
+            string name = parts[0];
+            decimal price = Convert.ToDecimal(parts[1]);
+
+            total += price;
+
+            <li>@name - @price kr.</li>
+        }
+    }
+</ul>
+<p><strong>Total: @total</strong></p>
+<p>You order wil be prepared and delivered</p>
+@{
+    DateTime tid;
+    DateTime.TryParse((ViewBag.Time ?? "").ToString(), out tid);
+}
+<p>to room @ViewBag.Room at @tid.Hour:@tid.Minute @tid.Day/@tid.Month</p>
