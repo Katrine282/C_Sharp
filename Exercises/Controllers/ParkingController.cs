@@ -39,7 +39,6 @@ public class ParkingController : Controller
             ptm.insertCoin(coin);
         }
         
-        
         if (formData.ContainsKey("cancel")) {
             // reset the model to its initial state
             ptm = new ParkingTicketMachine();

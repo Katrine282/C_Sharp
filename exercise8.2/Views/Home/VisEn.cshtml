@@ -1,0 +1,11 @@
+﻿@model Person
+
+@{
+    ViewBag.Title = "Vis en";
+    Layout = "_Layout";
+}
+
+<h2>Første person</h2>
+@* @(Model.Fornavn + " " + Model.Efternavn)<br/> *@
+@* @await Html.PartialAsync("VisEnPerson", Model) *@
+@await Component.InvokeAsync("VisEnPerson", Model)

@@ -1,0 +1,14 @@
+﻿@model System.Collections.Generic.List<exercise8._2.Models.Person>
+
+@{
+    ViewBag.Title = "Vis personer";
+    Layout = "_Layout";
+}
+
+<h2>Alle personer</h2>
+@foreach (Person p in @Model)
+{
+    @* @(p.Fornavn + " " + p.Efternavn)<br/> *@
+    @* @await Html.PartialAsync("VisEnPerson", p) *@
+    @await Component.InvokeAsync("VisEnPerson", p)
+}
