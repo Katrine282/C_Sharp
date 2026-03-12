@@ -1,0 +1,47 @@
+﻿@page "/calculator"
+@using opg2
+@rendermode InteractiveWebAssembly
+
+<PageTitle>Calculator</PageTitle>
+
+<h1>Calculator</h1>
+
+<input type="text" @bind="tal1"/>
+<input type="text" @bind="tal2"/>
+
+<br>
+<button class="btn btn-primary" @onclick="Plus">+</button>
+<button class="btn btn-primary" @onclick="Minus">-</button>
+<button class="btn btn-primary" @onclick="Gange">*</button>
+
+<p role="status">Result: @result</p>
+
+@code {
+    private int result = 0;
+    private int tal1 = 0;
+    private int tal2 = 0;
+    private HttpClient klient = new HttpClient();
+    private string url = "http://localhost:5121/api/calculation";
+    
+    private void Plus()
+    {
+        result = tal1 + tal2;
+        Calculation cal = new Calculation(tal1, tal2, result, "Plus");
+        klient.PostAsJsonAsync(url + "/add", cal);
+    }
+    
+    private void Minus()
+    {
+        result = tal1 - tal2;
+        Calculation cal = new Calculation(tal1, tal2, result, "Minus");
+        klient.PostAsJsonAsync(url + "/add", cal);
+    }
+    
+    private void Gange()
+    {
+        result = tal1 * tal2;
+        Calculation cal = new Calculation(tal1, tal2, result, "Gange");
+        klient.PostAsJsonAsync(url + "/add", cal);
+    }
+
+}
