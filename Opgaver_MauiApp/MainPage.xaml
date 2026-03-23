@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Opgaver_MauiApp.MainPage">
+    <HorizontalStackLayout Spacing="20" Padding="20">
+        <VerticalStackLayout>
+            <CollectionView x:Name="BilerListe" 
+                            HeightRequest="200" 
+                            WidthRequest="200" 
+                            SelectionMode="Single"
+                            SelectionChanged="BilerListe_OnSelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding DisplayText}" />
+                        <!-- <HorizontalStackLayout> -->
+                        <!--     <Label Text="{Binding Model}" /> -->
+                        <!--     <Label Text=" - "/> -->
+                        <!--     <Label Text="{Binding Heste}" /> -->
+                        <!-- </HorizontalStackLayout> -->
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="Model: " VerticalTextAlignment="Center" />
+                <Entry x:Name="Model" Text="{Binding Path=Model}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="Heste: " VerticalTextAlignment="Center" />
+                <Entry x:Name="Heste" Text="{Binding Path=Heste}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="elbil">
+                <Label Text="Elbil: " VerticalTextAlignment="Center" />
+                <CheckBox x:Name="Elbil" IsChecked="{Binding Path=Elbil}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button x:Name="VisButton" Text="Vis Bil" Clicked="Button_OnClicked" />
+                <Button x:Name="TilføjRandom" Text="Tilføj Random" Clicked="TilføjRandom_OnClicked" />
+                <Button x:Name="GemÆndringerButton" Text="Gem Ændringer" Clicked="GemÆndringerButton_OnClicked" />
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</ContentPage>

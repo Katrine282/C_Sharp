@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Opgave6.opg8">
+    <ContentPage.Content>
+        <Grid Padding="20"
+              RowDefinitions="Auto,Auto"
+              ColumnDefinitions="*,*"
+              RowSpacing="20"
+              ColumnSpacing="40">
+
+            <!-- Venstre side: RadioButtons -->
+            <VerticalStackLayout Grid.Row="0" Grid.Column="0" Spacing="20">
+                <RadioButton Content="North" GroupName="Direction" CheckedChanged="RadioButton_OnCheckedChanged"/>
+                <RadioButton Content="South" GroupName="Direction" CheckedChanged="RadioButton_OnCheckedChanged"/>
+                <RadioButton Content="East" GroupName="Direction" CheckedChanged="RadioButton_OnCheckedChanged"/>
+                <RadioButton Content="West" GroupName="Direction" CheckedChanged="RadioButton_OnCheckedChanged"/>
+            </VerticalStackLayout>
+
+            <!-- Højre side: Checkboxes med tekst -->
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="20">
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Lemon" VerticalOptions="Center"/>
+                    <CheckBox x:Name="Lemon" ClassId="Lemon" CheckedChanged="OnCheckedChanged"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Orange" VerticalOptions="Center"/>
+                    <CheckBox x:Name="Orange" ClassId="Orange" CheckedChanged="OnCheckedChanged"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Banana" VerticalOptions="Center"/>
+                    <CheckBox x:Name="Banana" ClassId="Banana" CheckedChanged="OnCheckedChanged"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+            <!-- Nederst: status -->
+            <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="2" Spacing="5">
+                
+                <Label x:Name="radio" />
+                
+                <Label x:Name="check" />
+            </VerticalStackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
