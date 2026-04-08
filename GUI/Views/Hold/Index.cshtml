@@ -1,0 +1,22 @@
+﻿@model List<DTO.Hold>
+
+<h2>Hold</h2>
+
+<a href="/Hold/Create">Opret hold</a>
+
+<table border="1">
+    <tr>
+        <th>Navn</th>
+        <th>Handling</th>
+    </tr>
+
+    @foreach (var h in Model)
+    {
+        <tr>
+            <td>@h.Navn</td>
+            <td>
+                <a href="/Hold/Details/@h.HoldId">Se</a>
+            </td>
+        </tr>
+    }
+</table>

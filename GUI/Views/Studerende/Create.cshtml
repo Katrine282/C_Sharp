@@ -1,0 +1,24 @@
+﻿@model DTO.Studerende
+
+<h2>Opret Studerende</h2>
+
+<form method="post">
+    <label>Navn</label>
+    <input asp-for="Navn" />
+
+    <label>Alder</label>
+    <input asp-for="Alder" />
+
+    <label>StudieStart</label>
+    <input asp-for="Studiestart" type="date" />
+
+    <label>StudieType</label>
+    <select asp-for="Studietype">
+        <option>Master</option>
+        <option>Bachelor</option>
+        <option>Enkeltfag</option>
+        <option>Videreuddannelse</option>
+    </select>
+
+    <button type="submit">Gem</button>
+</form>

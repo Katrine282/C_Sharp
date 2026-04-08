@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 using Opgaver_lek10.Model;
 
 namespace Opgaver_lek10.DAL;

@@ -1,0 +1,20 @@
+﻿@model DTO.Hold
+
+<h2>@Model.Navn</h2>
+
+<a href="/Hold/AddStuderende/@Model.HoldId">Tilføj studerende</a>
+
+<table border="1">
+    <tr>
+        <th>Navn</th>
+        <th>Alder</th>
+    </tr>
+
+    @foreach (var s in ViewBag.Studerende)
+    {
+        <tr>
+            <td>@s.Navn</td>
+            <td>@s.Alder</td>
+        </tr>
+    }
+</table>

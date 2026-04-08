@@ -1,0 +1,10 @@
+﻿@model DTO.Studerende
+
+<h2>Slet</h2>
+
+<p>Er du sikker på du vil slette @Model.Navn?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="ID" />
+    <button type="submit">Ja</button>
+</form>

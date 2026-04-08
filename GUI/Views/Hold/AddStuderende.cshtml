@@ -1,0 +1,14 @@
+﻿<h2>Tilføj studerende til hold</h2>
+
+<form method="post">
+    <input type="hidden" name="holdId" value="@ViewBag.HoldId" />
+
+    <select name="studId">
+        @foreach (var s in ViewBag.Studerende)
+        {
+            <option value="@s.ID">@s.Navn</option>
+        }
+    </select>
+
+    <button type="submit">Tilføj</button>
+</form>
