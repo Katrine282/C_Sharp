@@ -7,7 +7,7 @@ internal class StuderendeMapper
     public static DTO.Studerende Map(Studerende studerende)
     {
         DTO.Studerende s = new DTO.Studerende(studerende.ID,studerende.Navn, studerende.Studiestart,
-            studerende.Alder, studerende.Studietype);
+            studerende.Alder, studerende.Studietype, studerende.Karakter);
         if (studerende.HoldId != null)
         {
             s.HoldId = studerende.HoldId;
@@ -19,7 +19,7 @@ internal class StuderendeMapper
     public static Studerende Map(DTO.Studerende studerende)
     {
         Studerende s = new Studerende(studerende.ID,studerende.Navn, studerende.Studiestart,
-            studerende.Alder, studerende.Studietype);
+            studerende.Alder, studerende.Studietype, studerende.Karakter);
         if (studerende.HoldId != null)
         {
             s.HoldId = studerende.HoldId;
@@ -29,11 +29,11 @@ internal class StuderendeMapper
     
     public static DTO.Hold Map(Hold hold)
     {
-        return new DTO.Hold(hold.HoldId,hold.Navn);
+        return new DTO.Hold(hold.HoldId,hold.Navn) {TaxameterTilskud = hold.TaxameterTilskud};
     }
 
     public static Hold Map(DTO.Hold hold)
     {
-        return new Hold(hold.HoldId,hold.Navn);
+        return new Hold(hold.HoldId, hold.Navn) {TaxameterTilskud = hold.TaxameterTilskud};
     }
 }

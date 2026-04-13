@@ -4,5 +4,9 @@
 
 <p>Navn: @Model.Navn</p>
 <p>Alder: @Model.Alder</p>
+@if (Model.Karakter != null)
+{
+    <p>Karakter: @Model.Karakter</p>
+}
 <p>Start: @Model.Studiestart</p>
 <p>Type: @Model.Studietype</p>

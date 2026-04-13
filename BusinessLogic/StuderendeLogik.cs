@@ -26,29 +26,4 @@ public class StuderendeLogik
     }
     
     // public static void UpdateStuderende(Studerende studerende){}
-
-    public static void AddHold(Hold hold)
-    {
-        StuderendeRepository.AddHold(hold);
-    }
-
-    public static List<Studerende> GetStudereneTilHold(int holdId)
-    {
-        return StuderendeRepository.GetStudereneTilHold(holdId);
-    }
-
-    public static List<Hold> GetAllHold()
-    {
-        return StuderendeRepository.GetAllHold();
-    }
-
-    public static void AddStuderendeTilHold(int holdId, int studId)
-    {
-        StuderendeRepository.AddStuderendeTilHold(holdId, studId);
-    }
-    
-    public static Hold GetHoldById(int id)
-    {
-        return StuderendeRepository.GetHold(id);
-    }
 }

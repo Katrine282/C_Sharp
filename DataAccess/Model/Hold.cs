@@ -1,9 +1,12 @@
-﻿namespace DataAccess.Model;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DataAccess.Model;
 
 internal class Hold
 {
     public int HoldId { get; set; }
     public string Navn { get; set; }
+    public int TaxameterTilskud { get; set; }
     private List<Studerende> studerende = new ();
     public List<Studerende>  Studerende
     {

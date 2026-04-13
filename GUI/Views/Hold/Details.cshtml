@@ -2,7 +2,7 @@
 
 <h2>@Model.Navn</h2>
 
-<a href="/Hold/AddStuderende/@Model.HoldId">Tilføj studerende</a>
+<a asp-action="AddStuderende" asp-route-holdId="@Model.HoldId">Tilføj studerende</a>
 
 <table border="1">
     <tr>
@@ -18,3 +18,8 @@
         </tr>
     }
 </table>
+
+<form method="post" action="/Hold/GivKarakter">
+    <input type="hidden" name="holdId" value="@Model.HoldId" />
+    <button type="submit">Giv karakter til hold</button>
+</form>

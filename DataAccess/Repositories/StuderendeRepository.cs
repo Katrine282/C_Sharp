@@ -80,13 +80,17 @@ public class StuderendeRepository
         }
     }
 
-    public static void AddStuderendeTilHold(int studId, int holdId)
+    public static void AddStuderendeTilHold(int holdId, int studId)
     {
         using (StuderendeContext context = new StuderendeContext())
         {
-            DataAccess.Model.Studerende s = context.Studerendes.Where(s => s.ID == studId).First();
-            s.HoldId = holdId;
-            context.SaveChanges();
+            // Console.WriteLine($"DEBUG: Prøver at gemme StuderendeID {studId} på HoldID {holdId}");            
+            var studerende = context.Studerendes.Find(studId);
+            if (studerende != null)
+            {
+                studerende.HoldId = holdId; 
+                context.SaveChanges();
+            }
         }
     }
     
@@ -96,5 +100,22 @@ public class StuderendeRepository
         {
             return StuderendeMapper.Map(context.Holdene.Where(h => h.HoldId == id).First());
         }
+    }
+    
+    //--------------------------------------------------------------------------------------
+    
+    public static void OpdaterStudKarakter(TransactionManager manager, Studerende studerende, int karakter)
+    {
+        StuderendeContext context = manager.GetCurrentContext();
+    
+        DataAccess.Model.Studerende dataStud = context.Studerendes.Find(studerende.ID);
+        dataStud.Karakter = karakter;
+    }
+    public static void OpdaterHoldTilskud(TransactionManager manager, int HoldId, int tilskud)
+    {
+        StuderendeContext context = manager.GetCurrentContext();
+        
+        DataAccess.Model.Hold dataHold = context.Holdene.Find(HoldId);
+        dataHold.TaxameterTilskud += tilskud;
     }
 }

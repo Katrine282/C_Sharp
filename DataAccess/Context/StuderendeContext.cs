@@ -21,12 +21,13 @@ internal class StuderendeContext : DbContext
             });
         modelBuilder.Entity<Hold>().HasData(
             new Hold { HoldId = 1, Navn = "Geografi"},
-            new Hold { HoldId = 2, Navn = "Dansk"});
+            new Hold { HoldId = 2, Navn = "Dansk"}
+            );
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
     {
-        optionsBuilder.UseSqlServer("Data Source=LYNETMCQUEEN\\SQLEXPRESS;Initial Catalog=Studiebank;User Id=sa;Password=1234; TrustServerCertificate=true");
+        optionsBuilder.UseSqlServer("Data Source=LYNETMCQUEEN\\SQLEXPRESS;Initial Catalog=Studiebanken;User Id=sa;Password=1234; TrustServerCertificate=true");
     }
     
     public DbSet<Studerende> Studerendes { get; set; }

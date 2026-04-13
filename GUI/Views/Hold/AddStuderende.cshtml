@@ -1,7 +1,6 @@
 ﻿<h2>Tilføj studerende til hold</h2>
 
-<form method="post">
-    <input type="hidden" name="holdId" value="@ViewBag.HoldId" />
+<form asp-action="AddStuderende" asp-route-holdId="@ViewBag.HoldId" method="post">
 
     <select name="studId">
         @foreach (var s in ViewBag.Studerende)

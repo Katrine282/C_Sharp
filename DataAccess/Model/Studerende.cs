@@ -6,6 +6,8 @@ internal class Studerende
     public string Navn { get; set; }
     public DateTime Studiestart { get; set; }
     public int Alder { get; set; }
+    public int Karakter { get; set; } = -100;
+
     public DTO.Studietype Studietype { get; set; }
     public int? HoldId { get; set; }
     
@@ -14,12 +16,13 @@ internal class Studerende
     {
     }
 
-    public Studerende(int id, string navn, DateTime studiestart, int alder, DTO.Studietype studietype)
+    public Studerende(int id, string navn, DateTime studiestart, int alder, DTO.Studietype studietype, int karakter)
     {
         ID = id;
         Navn = navn;
         Studiestart = studiestart;
         Alder = alder;
         Studietype = studietype;
+        Karakter = karakter;
     }
 }

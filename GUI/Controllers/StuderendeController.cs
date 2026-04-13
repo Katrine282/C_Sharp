@@ -60,9 +60,9 @@ public class StuderendeController : Controller
 
     // POST: Delete
     [HttpPost, ActionName("Delete")]
-    public IActionResult DeleteConfirmed(int id)
+    public IActionResult DeleteConfirmed(int holdId)
     {
-        StuderendeLogik.DeleteStuderende(id);
+        StuderendeLogik.DeleteStuderende(holdId);
         return RedirectToAction("Index");
     }
 }

@@ -10,7 +10,7 @@ public class HoldController : Controller
     // Liste af hold
     public IActionResult Index()
     {
-        var hold = StuderendeLogik.GetAllHold();
+        var hold = HoldLogik.GetAllHold();
         return View(hold);
     }
 
@@ -23,22 +23,22 @@ public class HoldController : Controller
     [HttpPost]
     public IActionResult Create(DTO.Hold h)
     {
-        StuderendeLogik.AddHold(h);
+        HoldLogik.AddHold(h);
         return RedirectToAction("Index");
     }
 
     // Se hold + studerende
     public IActionResult Details(int id)
     {
-        var hold = StuderendeLogik.GetHoldById(id);
-        ViewBag.Studerende = StuderendeLogik.GetStudereneTilHold(id);
+        var hold = HoldLogik.GetHoldById(id);
+        ViewBag.Studerende = HoldLogik.GetStudereneTilHold(id);
         return View(hold);
     }
 
     // Tilføj studerende til hold
-    public IActionResult AddStuderende(int id)
+    public IActionResult AddStuderende(int holdId)
     {
-        ViewBag.HoldId = id;
+        ViewBag.HoldId = holdId;
         ViewBag.Studerende = StuderendeLogik.GetAllStuderende();
         return View();
     }
@@ -46,7 +46,15 @@ public class HoldController : Controller
     [HttpPost]
     public IActionResult AddStuderende(int holdId, int studId)
     {
-        StuderendeLogik.AddStuderendeTilHold(holdId, studId);
+        HoldLogik.AddStuderendeTilHold(holdId, studId);
+        return RedirectToAction("Details", new { id = holdId });
+    }
+    
+    [HttpPost]
+    public IActionResult GivKarakter(int holdId)
+    {
+        HoldLogik.GivKarakterTilHold(holdId);
+    
         return RedirectToAction("Details", new { id = holdId });
     }
 }
